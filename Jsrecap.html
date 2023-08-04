@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jsrecap</title>
+</head>
+<body>
+    <p id="function"></p>
+    <p id="function1"></p>
+    <p id="function2"></p>
+    <script>
+    var a = 4;
+    var b = 3;
+    var c = 10;
+    var total = (a * b) + c;
+    document.getElementById("function").innerHTML = "the total value of C is = " + total;
+    //function with 2 parameters>
+    //An Addition Function.
+    function additionfunction(a, b){
+        total = a + b;
+        return total;
+    }
+    document.getElementById("function1").innerHTML = "the total value of total is = " + additionfunction(4 ,3);
+    //Multiplication Function.
+      function multiplicationfunction(a, b){
+        total = a * b;
+        return total;
+     }
+     document.getElementById("function2").innerHTML = "the total value of total is = " +  multiplicationfunction(4, 3);
+     </script>
+   
+</body>
+</html>

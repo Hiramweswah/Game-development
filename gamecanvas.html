@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game Dev canvas tutorial</title>
+    <style>
+        *{
+            padding: 0;
+            margin:  0;
+        }
+        canvas{
+            background: #eee;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas" width="400" height="600"></canvas>
+    <script>
+         var canvas = document.getElementById("mycanvas");
+         var ctx= canvas.getContext("2d");
+         ctx.beginPath();
+         ctx.rect(140,240,120,120);
+         ctx.fillStyle="#566t4554";
+         ctx.fill();
+         ctx.closePath();
+         //Creating a circle.
+         ctx.beginPath();
+         ctx.arc(240,160,20,0,Math.PI*2,false);
+         ctx.fillStyle="green";
+         ctx.fill();
+         ctx.closePath();
+         //Creating our second circle.
+         ctx.beginPath();
+         ctx.arc(140,100,40,0,Math.PI*2,false);
+         ctx.fillStyle="blue";
+         ctx.fill();
+         ctx.closePath();
+
+         //creating our third circle without a fill.
+         ctx.beginPath();
+         ctx.arc(340,160,50,0,Math.PI*2,false);
+         ctx.strokeStyle="red";
+         ctx.stroke();
+         ctx.closePath();
+         //Creating a second rectangle.
+         ctx.beginPath();
+         ctx.rect(10,240,120,120);
+         ctx.strokeStyle="white";
+         ctx.stroke();
+         ctx.closePath();
+         //Creating a third rectangle.
+         ctx.beginPath();
+         ctx.rect(270,240,120,120);
+         ctx.strokeStyle="black";
+         ctx.stroke();
+         ctx.closePath();
+         
+         
+    </script>
+</body>
+</html>
